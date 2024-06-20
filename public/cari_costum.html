@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/cari_kostum.css" />
+    <title>Cari Kostum</title>
+  </head>
+  <body style="margin: 0px; padding: 0px">
+    <!-- start of header -->
+    <header>
+      <div class="header-container">
+        <div style="display: flex; flex-direction: row; max-height: 100%">
+          <!-- start of logo -->
+          <a
+            href="index.html"
+            style="
+              display: flex;
+              flex-direction: row;
+
+              align-items: start;
+            "
+          >
+            <img
+              style="margin-left: 10px; margin-top: 6%; margin-bottom: 0px"
+              loading="lazy"
+              src="../static/css/asset/images/Logo-bawang.png"
+              alt="pepek"
+              width="43"
+              height="44"
+            />
+
+            <p
+              style="
+                font-family: 'Segoe UI', sans-serif;
+                font-weight: bold;
+                color: #ac25eb;
+                font-size: 20px;
+              "
+            >
+              Bawang
+            </p>
+          </a>
+          <!-- end of logo -->
+        </div>
+        <div class="center-buttons">
+          <a href="index.html"><button>Home</button></a>
+          <a href="cari_costum.html"><button>Cari kostum</button></a>
+          <a href="rentalowner.html"><button>List Rental</button></a>
+          <button>Jadwal Event</button>
+        </div>
+        <div class="right-button">
+          <button style="font-weight: bold">Gabung Jadi Wibu</button>
+        </div>
+      </div>
+    </header>
+    <!-- end of header -->
+
+    <!-- start of the whole row-->
+
+    <div
+      style="
+        display: flex;
+        flex-direction: row;
+
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-top: 2%;
+      "
+    >
+      <!-- start of the column on the left (sampe bawah) -->
+      <div style="display: flex; flex-direction: column; width: 15%">
+        <p
+          style="
+            font-family: Segoe UI, sans-serif;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 32px;
+            color: #252b36;
+            margin-top: 0px;
+            margin-bottom: 0px;
+          "
+        >
+          Cari Kostum
+        </p>
+        <p
+          style="
+            font-family: Segoe UI, sans-serif;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 16px;
+            color: #252b36c0;
+            margin-top: 10px;
+            margin-bottom: 0px;
+          "
+        >
+          di Bawang
+        </p>
+        <p class="text-biru-yg-di-kiri">Series</p>
+        <div class="list-container">
+          <a href="#" class="list-item">Genshin Impact</a>
+          <a href="#" class="list-item">Honkai: Star Rail</a>
+          <a href="#" class="list-item">Blue Lock</a>
+          <a href="#" class="list-item">Jujutsu Kaisen</a>
+          <a href="#" class="list-item">Chainsaw Man</a>
+          <a href="#" class="list-item">Hololive</a>
+          <a href="#" class="list-item">Spy x Family</a>
+          <a href="#" class="list-item">Frieren Beyond Journey's End</a>
+          <a href="#" class="list-item">Mobile Legends: Bang Bang</a>
+        </div>
+        <p class="text-biru-yg-di-kiri">Karakter</p>
+        <div class="list-container">
+          <a href="#" class="list-item">Yae Miko</a>
+          <a href="#" class="list-item">Kafka</a>
+          <a href="#" class="list-item">Ganyu</a>
+          <a href="#" class="list-item">Silver Wolf</a>
+          <a href="#" class="list-item">Fubuki</a>
+          <a href="#" class="list-item">Suisei</a>
+          <a href="#" class="list-item">Lor Forger</a>
+          <a href="#" class="list-item">Frieren</a>
+          <a href="#" class="list-item">Übel</a>
+        </div>
+
+        <p class="text-biru-yg-di-kiri">Brand</p>
+        <div class="list-container">
+          <a href="#" class="list-item">Maker Lokal</a>
+          <a href="#" class="list-item">No brand (Taobao)</a>
+          <a href="#" class="list-item">Wudu</a>
+          <a href="#" class="list-item">UwU</a>
+          <a href="#" class="list-item">Adrian Brand</a>
+          <a href="#" class="list-item">Pepek Brand</a>
+          <a href="#" class="list-item">ketiak</a>
+          <a href="#" class="list-item">Serval Brand</a>
+          <a href="#" class="list-item">Polytron</a>
+        </div>
+      </div>
+      <!-- end of the column on the left (sampe bawah) -->
+
+      <!-- start of the column on the right (sampe bawah, yg ada search bar etc.) -->
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          margin-left: 5%;
+          width: 80%;
+        "
+      >
+        <!-- start ofinner row (buat searchbar, dropdown search (dikiri) and toggles (yg di kanan)) -->
+        <div style="display: flex; flex-direction: row">
+          <!-- start of inner left column (buat searh and dropdown search) -->
+          <div style="display: flex; flex-direction: column">
+            <!-- start of search -->
+            <div class="search-container" style="margin-top: px; padding: 0px">
+              <input
+                type="text"
+                class="search-input1"
+                placeholder="Cari kreator atau produk"
+                style="
+                  font-size: 19px;
+                  font-weight: normal;
+                  font-family: Segoe UI, sans-serif;
+                  color: #252b36;
+                  margin-top: 0%;
+                  margin-bottom: 0px;
+                "
+              />
+              <div class="SearchButton">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/5ba9834d873f505839e8f772bf334e9ad5bf65f78aaa81eedf97a7ddfa72af5c?apiKey=8483ae683318450a8a990dafc43c1ead&"
+                  alt=""
+                  class="search-icon"
+                  alt="pepek"
+                  style="margin-right: 20px"
+                />
+              </div>
+            </div>
+            <!-- end of search -->
+            <!-- start of search dropdown -->
+            <div class="search-dropdown-container">
+              <div class="search-dropdown">
+                <input
+                  type="text"
+                  class="search-input"
+                  placeholder="Semua Provinsi"
+                />
+                <span class="dropdown-arrow">&#9662;</span>
+                <div class="dropdown-content">
+                  <a href="#">Option 1</a>
+                  <a href="#">Option 2</a>
+                  <a href="#">Option 3</a>
+                </div>
+              </div>
+              <div class="search-dropdown">
+                <input
+                  type="text"
+                  class="search-input"
+                  placeholder="Semua Kota"
+                />
+                <span class="dropdown-arrow">&#9662;</span>
+                <div class="dropdown-content">
+                  <a href="#">Option 1</a>
+                  <a href="#">Option 2</a>
+                  <a href="#">Option 3</a>
+                </div>
+              </div>
+              <div class="search-dropdown">
+                <input
+                  type="text"
+                  class="search-input"
+                  placeholder="Semua Ukuran"
+                />
+                <span class="dropdown-arrow">&#9662;</span>
+                <div class="dropdown-content">
+                  <a href="#">Option 1</a>
+                  <a href="#">Option 2</a>
+                  <a href="#">Option 3</a>
+                </div>
+              </div>
+              <div class="search-dropdown">
+                <input
+                  type="text"
+                  class="search-input"
+                  placeholder="Semua Gender"
+                />
+                <span class="dropdown-arrow">&#9662;</span>
+                <div class="dropdown-content">
+                  <a href="#">Option 1</a>
+                  <a href="#">Option 2</a>
+                  <a href="#">Option 3</a>
+                </div>
+              </div>
+            </div>
+            <!-- end of searchdropdown -->
+          </div>
+          <!-- end of inner left column (buat searh and dropdown search) -->
+          <!-- start of toggles -->
+          <div class="toggle-container">
+            <div class="toggle-wrapper">
+              <label class="toggle-switch">
+                <input type="checkbox" />
+                <span class="slider"></span>
+              </label>
+              <span class="toggle-label">Sewa weekday</span>
+            </div>
+            <div class="toggle-wrapper">
+              <label class="toggle-switch">
+                <input type="checkbox" />
+                <span class="slider"></span>
+              </label>
+              <span class="toggle-label">Kirim luar pulau</span>
+            </div>
+          </div>
+
+          <!-- end of toggles -->
+        </div>
+        <!-- end of inner row (buat searchbar, dropdown search (dikiri) and toggles (yg di kanan)) -->
+        <p
+          style="
+            font-family: Segoe UI, sans-serif;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 15px;
+            color: #ac25eb;
+            margin-top: 15px;
+            margin-bottom: 5px;
+          "
+        >
+          4000 Kostum ditemukan
+        </p>
+        <!-- start of costume for rent -->
+
+        <template id="costumesforrent">
+          <a
+            class="item-link"
+            href="product.html"
+            style="text-decoration: none; color: inherit"
+          >
+            <div
+              style="display: flex; flex-direction: column; align-items: center"
+            >
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  position: relative;
+                  border: 1px solid #0000003d;
+                  border-radius: 10px;
+                  height: 500px;
+                  width: 200px;
+                "
+              >
+                <img class="main-image" loading="lazy" />
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    height: 60.23140496%;
+                  "
+                >
+                  <div style="display: flex; flex-direction: row">
+                    <img class="profile-image" loading="lazy" />
+                    <div
+                      class="profile-details"
+                      style="
+                        font-family: Segoe UI, sans-serif;
+                        display: flex;
+                        flex-direction: column;
+                        margin-left: 4%;
+                      "
+                    >
+                      <p class="profile-name"></p>
+                      <p class="profile-username"></p>
+                    </div>
+                  </div>
+                  <div style="display: flex; flex-direction: column">
+                    <p class="item-title"></p>
+                    <p class="item-price"></p>
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: row;
+                        margin-left: 10px;
+                        margin-top: 5px;
+                      "
+                    >
+                      <img class="tag-image" alt="tag" />
+                      <p class="item-tag"></p>
+                    </div>
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: row;
+                        margin-left: 10px;
+                        margin-top: 5px;
+                      "
+                    >
+                      <img class="tv-image" alt="tv" />
+                      <p class="item-tv"></p>
+                    </div>
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: row;
+                        margin-left: 10px;
+                        margin-top: 5px;
+                      "
+                    >
+                      <img class="contact-image" alt="contact" />
+                      <p class="item-contact"></p>
+                    </div>
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: row;
+                        margin-left: 10px;
+                        margin-top: 5px;
+                      "
+                    >
+                      <div
+                        style="border: 1px solid #252b36; border-radius: 5px"
+                      >
+                        <p class="item-size">Size</p>
+                      </div>
+                      <div
+                        style="
+                          border: 1px solid #252b36;
+                          border-radius: 5px;
+                          margin-left: 10px;
+                        "
+                      >
+                        <p class="item-gender">Gender</p>
+                      </div>
+                    </div>
+                    <div class="top-border">
+                      <div
+                        style="
+                          display: flex;
+                          flex-direction: row;
+                          margin-left: 10px;
+                          margin-top: 5%;
+                          margin-bottom: 5%;
+                          overflow: hidden;
+                        "
+                      >
+                        <img class="location-image" alt="location" />
+                        <p class="item-location"></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </template>
+
+        <!-- copy form here -->
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            max-width: 100%;
+            justify-content: start;
+            margin-top: 5px;
+            margin-left: 20px;
+          "
+        >
+          <div
+            id="template-container"
+            style="
+              display: flex;
+              flex-direction: row;
+              max-width: 100%;
+              justify-content: center;
+              /* margin-left: 10%;
+  margin-right: 10%; */
+              gap: 1%;
+            "
+          ></div>
+        </div>
+
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            const templateContainer =
+              document.getElementById("template-container");
+            const template = document.getElementById("costumesforrent");
+
+            const data = [
+              {
+                mainImage:
+                  "https://m.media-amazon.com/images/I/71KM6tuxj7L._AC_UL1500_.jpg",
+                profileImage:
+                  "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/8480593/ca33e2bb06574b5ba5ccabe8657b8cab/eyJoIjoxMDgwLCJ3IjoxMDgwfQ%3D%3D/2.jpg?token-time=1718841600&token-hash=Vo-EMGEVav1mQlfYKELtMMBA25ak4p6J65d4Sg_RTFo%3D",
+                profileName: "Adrian XD",
+                profileUsername: "@ailaa_cosrent",
+                itemTitle: "Rental Cosplay Yae Miko",
+                itemPrice: "Rp 55.000 / 3 hari",
+                itemTag: "Maker Lokal",
+                itemTV: "Genshin Impact",
+                itemContact: "Adrian",
+                itemLocation: "BSD, Tangerang Selatan",
+                tagImage: "../../static/css/asset/images/tag.png",
+                tvImage: "../../static/css/asset/images/tv.png",
+                contactImage: "../../static/css/asset/images/contact.png",
+                locationImage: "../../static/css/asset/images/location.png",
+                link: "product.html", // Add the link for each item
+              },
+              {
+                mainImage:
+                  "https://m.media-amazon.com/images/I/71KM6tuxj7L._AC_UL1500_.jpg",
+                profileImage:
+                  "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/8480593/ca33e2bb06574b5ba5ccabe8657b8cab/eyJoIjoxMDgwLCJ3IjoxMDgwfQ%3D%3D/2.jpg?token-time=1718841600&token-hash=Vo-EMGEVav1mQlfYKELtMMBA25ak4p6J65d4Sg_RTFo%3D",
+                profileName: "Adrian XD",
+                profileUsername: "@ailaa_cosrent",
+                itemTitle: "Rental Cosplay Yae Miko",
+                itemPrice: "Rp 55.000 / 3 hari",
+                itemTag: "Maker Lokal",
+                itemTV: "Genshin Impact",
+                itemContact: "Adrian",
+                itemLocation: "BSD, Tangerang Selatan",
+                tagImage: "../../static/css/asset/images/tag.png",
+                tvImage: "../../static/css/asset/images/tv.png",
+                contactImage: "../../static/css/asset/images/contact.png",
+                locationImage: "../../static/css/asset/images/location.png",
+                link: "product.html", // Add the link for each item
+              },
+              {
+                mainImage:
+                  "https://m.media-amazon.com/images/I/71KM6tuxj7L._AC_UL1500_.jpg",
+                profileImage:
+                  "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/8480593/ca33e2bb06574b5ba5ccabe8657b8cab/eyJoIjoxMDgwLCJ3IjoxMDgwfQ%3D%3D/2.jpg?token-time=1718841600&token-hash=Vo-EMGEVav1mQlfYKELtMMBA25ak4p6J65d4Sg_RTFo%3D",
+                profileName: "Adrian XD",
+                profileUsername: "@ailaa_cosrent",
+                itemTitle: "Rental Cosplay Yae Miko",
+                itemPrice: "Rp 55.000 / 3 hari",
+                itemTag: "Maker Lokal",
+                itemTV: "Genshin Impact",
+                itemContact: "Adrian",
+                itemLocation: "BSD, Tangerang Selatan",
+                tagImage: "../../static/css/asset/images/tag.png",
+                tvImage: "../../static/css/asset/images/tv.png",
+                contactImage: "../../static/css/asset/images/contact.png",
+                locationImage: "../../static/css/asset/images/location.png",
+                link: "product.html", // Add the link for each item
+              },
+              {
+                mainImage:
+                  "https://m.media-amazon.com/images/I/71KM6tuxj7L._AC_UL1500_.jpg",
+                profileImage:
+                  "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/8480593/ca33e2bb06574b5ba5ccabe8657b8cab/eyJoIjoxMDgwLCJ3IjoxMDgwfQ%3D%3D/2.jpg?token-time=1718841600&token-hash=Vo-EMGEVav1mQlfYKELtMMBA25ak4p6J65d4Sg_RTFo%3D",
+                profileName: "Adrian XD",
+                profileUsername: "@ailaa_cosrent",
+                itemTitle: "Rental Cosplay Yae Miko",
+                itemPrice: "Rp 55.000 / 3 hari",
+                itemTag: "Maker Lokal",
+                itemTV: "Genshin Impact",
+                itemContact: "Adrian",
+                itemLocation: "BSD, Tangerang Selatan",
+                tagImage: "../../static/css/asset/images/tag.png",
+                tvImage: "../../static/css/asset/images/tv.png",
+                contactImage: "../../static/css/asset/images/contact.png",
+                locationImage: "../../static/css/asset/images/location.png",
+                link: "product.html", // Add the link for each item
+              },
+              {
+                mainImage:
+                  "https://m.media-amazon.com/images/I/71KM6tuxj7L._AC_UL1500_.jpg",
+                profileImage:
+                  "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/8480593/ca33e2bb06574b5ba5ccabe8657b8cab/eyJoIjoxMDgwLCJ3IjoxMDgwfQ%3D%3D/2.jpg?token-time=1718841600&token-hash=Vo-EMGEVav1mQlfYKELtMMBA25ak4p6J65d4Sg_RTFo%3D",
+                profileName: "Adrian XD",
+                profileUsername: "@ailaa_cosrent",
+                itemTitle: "Rental Cosplay Yae Miko",
+                itemPrice: "Rp 55.000 / 3 hari",
+                itemTag: "Maker Lokal",
+                itemTV: "Genshin Impact",
+                itemContact: "Adrian",
+                itemLocation: "BSD, Tangerang Selatan",
+                tagImage: "../../static/css/asset/images/tag.png",
+                tvImage: "../../static/css/asset/images/tv.png",
+                contactImage: "../../static/css/asset/images/contact.png",
+                locationImage: "../../static/css/asset/images/location.png",
+                link: "product.html", // Add the link for each item
+              },
+
+              // Add more items as needed
+            ];
+
+            data.forEach((item) => {
+              const clone = template.content.cloneNode(true);
+
+              // Update the content of the cloned template
+              clone.querySelector(".item-link").href = item.link;
+              clone.querySelector(".main-image").src = item.mainImage;
+              clone.querySelector(".profile-image").src = item.profileImage;
+              clone.querySelector(".profile-name").textContent =
+                item.profileName;
+              clone.querySelector(".profile-username").textContent =
+                item.profileUsername;
+              clone.querySelector(".item-title").textContent = item.itemTitle;
+              clone.querySelector(".item-price").textContent = item.itemPrice;
+              clone.querySelector(".item-tag").textContent = item.itemTag;
+              clone.querySelector(".tag-image").src = item.tagImage;
+              clone.querySelector(".item-tv").textContent = item.itemTV;
+              clone.querySelector(".tv-image").src = item.tvImage;
+              clone.querySelector(".item-contact").textContent =
+                item.itemContact;
+              clone.querySelector(".contact-image").src = item.contactImage;
+              clone.querySelector(".item-location").textContent =
+                item.itemLocation;
+              clone.querySelector(".location-image").src = item.locationImage;
+
+              templateContainer.appendChild(clone);
+            });
+          });
+        </script>
+
+        <!-- to here -->
+        <!-- copy form here -->
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            max-width: 100%;
+            justify-content: start;
+            margin-top: 20px;
+            margin-left: 20px;
+          "
+        >
+          <div
+            id="template-container2"
+            style="
+              display: flex;
+              flex-direction: row;
+              max-width: 100%;
+              justify-content: center;
+              /* margin-left: 10%;
+margin-right: 10%; */
+              gap: 1%;
+            "
+          ></div>
+        </div>
+
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            const templateContainer = document.getElementById(
+              "template-container2"
+            );
+            const template = document.getElementById("costumesforrent");
+
+            const data = [
+              {
+                mainImage:
+                  "https://m.media-amazon.com/images/I/71KM6tuxj7L._AC_UL1500_.jpg",
+                profileImage:
+                  "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/8480593/ca33e2bb06574b5ba5ccabe8657b8cab/eyJoIjoxMDgwLCJ3IjoxMDgwfQ%3D%3D/2.jpg?token-time=1718841600&token-hash=Vo-EMGEVav1mQlfYKELtMMBA25ak4p6J65d4Sg_RTFo%3D",
+                profileName: "Adrian XD",
+                profileUsername: "@ailaa_cosrent",
+                itemTitle: "Rental Cosplay Yae Miko",
+                itemPrice: "Rp 55.000 / 3 hari",
+                itemTag: "Maker Lokal",
+                itemTV: "Genshin Impact",
+                itemContact: "Adrian",
+                itemLocation: "BSD, Tangerang Selatan",
+                tagImage: "../../static/css/asset/images/tag.png",
+                tvImage: "../../static/css/asset/images/tv.png",
+                contactImage: "../../static/css/asset/images/contact.png",
+                locationImage: "../../static/css/asset/images/location.png",
+                link: "product.html", // Add the link for each item
+              },
+              {
+                mainImage:
+                  "https://m.media-amazon.com/images/I/71KM6tuxj7L._AC_UL1500_.jpg",
+                profileImage:
+                  "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/8480593/ca33e2bb06574b5ba5ccabe8657b8cab/eyJoIjoxMDgwLCJ3IjoxMDgwfQ%3D%3D/2.jpg?token-time=1718841600&token-hash=Vo-EMGEVav1mQlfYKELtMMBA25ak4p6J65d4Sg_RTFo%3D",
+                profileName: "Adrian XD",
+                profileUsername: "@ailaa_cosrent",
+                itemTitle: "Rental Cosplay Yae Miko",
+                itemPrice: "Rp 55.000 / 3 hari",
+                itemTag: "Maker Lokal",
+                itemTV: "Genshin Impact",
+                itemContact: "Adrian",
+                itemLocation: "BSD, Tangerang Selatan",
+                tagImage: "../../static/css/asset/images/tag.png",
+                tvImage: "../../static/css/asset/images/tv.png",
+                contactImage: "../../static/css/asset/images/contact.png",
+                locationImage: "../../static/css/asset/images/location.png",
+                link: "product.html", // Add the link for each item
+              },
+              {
+                mainImage:
+                  "https://m.media-amazon.com/images/I/71KM6tuxj7L._AC_UL1500_.jpg",
+                profileImage:
+                  "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/8480593/ca33e2bb06574b5ba5ccabe8657b8cab/eyJoIjoxMDgwLCJ3IjoxMDgwfQ%3D%3D/2.jpg?token-time=1718841600&token-hash=Vo-EMGEVav1mQlfYKELtMMBA25ak4p6J65d4Sg_RTFo%3D",
+                profileName: "Adrian XD",
+                profileUsername: "@ailaa_cosrent",
+                itemTitle: "Rental Cosplay Yae Miko",
+                itemPrice: "Rp 55.000 / 3 hari",
+                itemTag: "Maker Lokal",
+                itemTV: "Genshin Impact",
+                itemContact: "Adrian",
+                itemLocation: "BSD, Tangerang Selatan",
+                tagImage: "../../static/css/asset/images/tag.png",
+                tvImage: "../../static/css/asset/images/tv.png",
+                contactImage: "../../static/css/asset/images/contact.png",
+                locationImage: "../../static/css/asset/images/location.png",
+                link: "product.html", // Add the link for each item
+              },
+              {
+                mainImage:
+                  "https://m.media-amazon.com/images/I/71KM6tuxj7L._AC_UL1500_.jpg",
+                profileImage:
+                  "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/8480593/ca33e2bb06574b5ba5ccabe8657b8cab/eyJoIjoxMDgwLCJ3IjoxMDgwfQ%3D%3D/2.jpg?token-time=1718841600&token-hash=Vo-EMGEVav1mQlfYKELtMMBA25ak4p6J65d4Sg_RTFo%3D",
+                profileName: "Adrian XD",
+                profileUsername: "@ailaa_cosrent",
+                itemTitle: "Rental Cosplay Yae Miko",
+                itemPrice: "Rp 55.000 / 3 hari",
+                itemTag: "Maker Lokal",
+                itemTV: "Genshin Impact",
+                itemContact: "Adrian",
+                itemLocation: "BSD, Tangerang Selatan",
+                tagImage: "../../static/css/asset/images/tag.png",
+                tvImage: "../../static/css/asset/images/tv.png",
+                contactImage: "../../static/css/asset/images/contact.png",
+                locationImage: "../../static/css/asset/images/location.png",
+                link: "product.html", // Add the link for each item
+              },
+              {
+                mainImage:
+                  "https://m.media-amazon.com/images/I/71KM6tuxj7L._AC_UL1500_.jpg",
+                profileImage:
+                  "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/8480593/ca33e2bb06574b5ba5ccabe8657b8cab/eyJoIjoxMDgwLCJ3IjoxMDgwfQ%3D%3D/2.jpg?token-time=1718841600&token-hash=Vo-EMGEVav1mQlfYKELtMMBA25ak4p6J65d4Sg_RTFo%3D",
+                profileName: "Adrian XD",
+                profileUsername: "@ailaa_cosrent",
+                itemTitle: "Rental Cosplay Yae Miko",
+                itemPrice: "Rp 55.000 / 3 hari",
+                itemTag: "Maker Lokal",
+                itemTV: "Genshin Impact",
+                itemContact: "Adrian",
+                itemLocation: "BSD, Tangerang Selatan",
+                tagImage: "../../static/css/asset/images/tag.png",
+                tvImage: "../../static/css/asset/images/tv.png",
+                contactImage: "../../static/css/asset/images/contact.png",
+                locationImage: "../../static/css/asset/images/location.png",
+                link: "product.html", // Add the link for each item
+              },
+
+              // Add more items as needed
+            ];
+
+            data.forEach((item) => {
+              const clone = template.content.cloneNode(true);
+
+              // Update the content of the cloned template
+              clone.querySelector(".item-link").href = item.link;
+              clone.querySelector(".main-image").src = item.mainImage;
+              clone.querySelector(".profile-image").src = item.profileImage;
+              clone.querySelector(".profile-name").textContent =
+                item.profileName;
+              clone.querySelector(".profile-username").textContent =
+                item.profileUsername;
+              clone.querySelector(".item-title").textContent = item.itemTitle;
+              clone.querySelector(".item-price").textContent = item.itemPrice;
+              clone.querySelector(".item-tag").textContent = item.itemTag;
+              clone.querySelector(".tag-image").src = item.tagImage;
+              clone.querySelector(".item-tv").textContent = item.itemTV;
+              clone.querySelector(".tv-image").src = item.tvImage;
+              clone.querySelector(".item-contact").textContent =
+                item.itemContact;
+              clone.querySelector(".contact-image").src = item.contactImage;
+              clone.querySelector(".item-location").textContent =
+                item.itemLocation;
+              clone.querySelector(".location-image").src = item.locationImage;
+
+              templateContainer.appendChild(clone);
+            });
+          });
+        </script>
+
+        <!-- to here -->
+        <!-- copy form here -->
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            max-width: 100%;
+            justify-content: start;
+            margin-top: 20px;
+            margin-left: 20px;
+          "
+        >
+          <div
+            id="template-container3"
+            style="
+              display: flex;
+              flex-direction: row;
+              max-width: 100%;
+              justify-content: center;
+              /* margin-left: 10%;
+margin-right: 10%; */
+              gap: 1%;
+            "
+          ></div>
+        </div>
+
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            const templateContainer = document.getElementById(
+              "template-container3"
+            );
+            const template = document.getElementById("costumesforrent");
+
+            const data = [
+              {
+                mainImage:
+                  "https://m.media-amazon.com/images/I/71KM6tuxj7L._AC_UL1500_.jpg",
+                profileImage:
+                  "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/8480593/ca33e2bb06574b5ba5ccabe8657b8cab/eyJoIjoxMDgwLCJ3IjoxMDgwfQ%3D%3D/2.jpg?token-time=1718841600&token-hash=Vo-EMGEVav1mQlfYKELtMMBA25ak4p6J65d4Sg_RTFo%3D",
+                profileName: "Adrian XD",
+                profileUsername: "@ailaa_cosrent",
+                itemTitle: "Rental Cosplay Yae Miko",
+                itemPrice: "Rp 55.000 / 3 hari",
+                itemTag: "Maker Lokal",
+                itemTV: "Genshin Impact",
+                itemContact: "Adrian",
+                itemLocation: "BSD, Tangerang Selatan",
+                tagImage: "../../static/css/asset/images/tag.png",
+                tvImage: "../../static/css/asset/images/tv.png",
+                contactImage: "../../static/css/asset/images/contact.png",
+                locationImage: "../../static/css/asset/images/location.png",
+                link: "product.html", // Add the link for each item
+              },
+              {
+                mainImage:
+                  "https://m.media-amazon.com/images/I/71KM6tuxj7L._AC_UL1500_.jpg",
+                profileImage:
+                  "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/8480593/ca33e2bb06574b5ba5ccabe8657b8cab/eyJoIjoxMDgwLCJ3IjoxMDgwfQ%3D%3D/2.jpg?token-time=1718841600&token-hash=Vo-EMGEVav1mQlfYKELtMMBA25ak4p6J65d4Sg_RTFo%3D",
+                profileName: "Adrian XD",
+                profileUsername: "@ailaa_cosrent",
+                itemTitle: "Rental Cosplay Yae Miko",
+                itemPrice: "Rp 55.000 / 3 hari",
+                itemTag: "Maker Lokal",
+                itemTV: "Genshin Impact",
+                itemContact: "Adrian",
+                itemLocation: "BSD, Tangerang Selatan",
+                tagImage: "../../static/css/asset/images/tag.png",
+                tvImage: "../../static/css/asset/images/tv.png",
+                contactImage: "../../static/css/asset/images/contact.png",
+                locationImage: "../../static/css/asset/images/location.png",
+                link: "product.html", // Add the link for each item
+              },
+              {
+                mainImage:
+                  "https://m.media-amazon.com/images/I/71KM6tuxj7L._AC_UL1500_.jpg",
+                profileImage:
+                  "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/8480593/ca33e2bb06574b5ba5ccabe8657b8cab/eyJoIjoxMDgwLCJ3IjoxMDgwfQ%3D%3D/2.jpg?token-time=1718841600&token-hash=Vo-EMGEVav1mQlfYKELtMMBA25ak4p6J65d4Sg_RTFo%3D",
+                profileName: "Adrian XD",
+                profileUsername: "@ailaa_cosrent",
+                itemTitle: "Rental Cosplay Yae Miko",
+                itemPrice: "Rp 55.000 / 3 hari",
+                itemTag: "Maker Lokal",
+                itemTV: "Genshin Impact",
+                itemContact: "Adrian",
+                itemLocation: "BSD, Tangerang Selatan",
+                tagImage: "../../static/css/asset/images/tag.png",
+                tvImage: "../../static/css/asset/images/tv.png",
+                contactImage: "../../static/css/asset/images/contact.png",
+                locationImage: "../../static/css/asset/images/location.png",
+                link: "product.html", // Add the link for each item
+              },
+              {
+                mainImage:
+                  "https://m.media-amazon.com/images/I/71KM6tuxj7L._AC_UL1500_.jpg",
+                profileImage:
+                  "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/8480593/ca33e2bb06574b5ba5ccabe8657b8cab/eyJoIjoxMDgwLCJ3IjoxMDgwfQ%3D%3D/2.jpg?token-time=1718841600&token-hash=Vo-EMGEVav1mQlfYKELtMMBA25ak4p6J65d4Sg_RTFo%3D",
+                profileName: "Adrian XD",
+                profileUsername: "@ailaa_cosrent",
+                itemTitle: "Rental Cosplay Yae Miko",
+                itemPrice: "Rp 55.000 / 3 hari",
+                itemTag: "Maker Lokal",
+                itemTV: "Genshin Impact",
+                itemContact: "Adrian",
+                itemLocation: "BSD, Tangerang Selatan",
+                tagImage: "../../static/css/asset/images/tag.png",
+                tvImage: "../../static/css/asset/images/tv.png",
+                contactImage: "../../static/css/asset/images/contact.png",
+                locationImage: "../../static/css/asset/images/location.png",
+                link: "product.html", // Add the link for each item
+              },
+              {
+                mainImage:
+                  "https://m.media-amazon.com/images/I/71KM6tuxj7L._AC_UL1500_.jpg",
+                profileImage:
+                  "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/8480593/ca33e2bb06574b5ba5ccabe8657b8cab/eyJoIjoxMDgwLCJ3IjoxMDgwfQ%3D%3D/2.jpg?token-time=1718841600&token-hash=Vo-EMGEVav1mQlfYKELtMMBA25ak4p6J65d4Sg_RTFo%3D",
+                profileName: "Adrian XD",
+                profileUsername: "@ailaa_cosrent",
+                itemTitle: "Rental Cosplay Yae Miko",
+                itemPrice: "Rp 55.000 / 3 hari",
+                itemTag: "Maker Lokal",
+                itemTV: "Genshin Impact",
+                itemContact: "Adrian",
+                itemLocation: "BSD, Tangerang Selatan",
+                tagImage: "../../static/css/asset/images/tag.png",
+                tvImage: "../../static/css/asset/images/tv.png",
+                contactImage: "../../static/css/asset/images/contact.png",
+                locationImage: "../../static/css/asset/images/location.png",
+                link: "product.html", // Add the link for each item
+              },
+
+              // Add more items as needed
+            ];
+
+            data.forEach((item) => {
+              const clone = template.content.cloneNode(true);
+
+              // Update the content of the cloned template
+              clone.querySelector(".item-link").href = item.link;
+              clone.querySelector(".main-image").src = item.mainImage;
+              clone.querySelector(".profile-image").src = item.profileImage;
+              clone.querySelector(".profile-name").textContent =
+                item.profileName;
+              clone.querySelector(".profile-username").textContent =
+                item.profileUsername;
+              clone.querySelector(".item-title").textContent = item.itemTitle;
+              clone.querySelector(".item-price").textContent = item.itemPrice;
+              clone.querySelector(".item-tag").textContent = item.itemTag;
+              clone.querySelector(".tag-image").src = item.tagImage;
+              clone.querySelector(".item-tv").textContent = item.itemTV;
+              clone.querySelector(".tv-image").src = item.tvImage;
+              clone.querySelector(".item-contact").textContent =
+                item.itemContact;
+              clone.querySelector(".contact-image").src = item.contactImage;
+              clone.querySelector(".item-location").textContent =
+                item.itemLocation;
+              clone.querySelector(".location-image").src = item.locationImage;
+
+              templateContainer.appendChild(clone);
+            });
+          });
+        </script>
+
+        <!-- to here -->
+        <!-- end of costumes to rent pt 1-->
+      </div>
+      <!-- end of the column on the right (sampe bawah, yg ada search bar etc.) -->
+    </div>
+    <!-- start of the whole row-->
+    <div style="height: 20px"></div>
+  </body>
+</html>

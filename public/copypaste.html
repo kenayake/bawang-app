@@ -1,0 +1,143 @@
+  <!-- start of search dropdown -->
+  <div
+  id="container"
+  style="
+    display: flex;
+    flex-direction: row;
+    max-width: 60%;
+    justify-content: space-between;
+  "
+></div>
+
+<template id="search-dropdown-template">
+  <div
+    class="searchdropdownrow"
+    style="display: flex; justify-content: center"
+  >
+    <div
+      class="searchdropdown1"
+      style="
+        margin-top: 20px;
+        margin-left: 0%;
+        margin-right: 0%;
+        display: flex;
+        flex-direction: row;
+        border: 1px solid #0000003d;
+        border-radius: 16px;
+        width: 93%;
+      "
+    >
+      <div
+        style="
+          margin-top: 0px;
+          padding: 0px;
+          display: flex;
+          align-items: center;
+          width: 85%;
+          background-color: #ffffff;
+          border-radius: 16px;
+          overflow: hidden;
+          border: 0px solid #ccc;
+        "
+      >
+        <div class="SearchButton"></div>
+        <input
+          type="text"
+          class="search-input"
+          placeholder="Search"
+          style="
+            font-size: 19px;
+            font-weight: normal;
+            font-family: Segoe UI, sans-serif;
+            color: #252b36;
+            margin-top: 0%;
+            margin-bottom: 0px;
+            margin-left: 5%;
+          "
+        />
+        <button type="button" class="search-button"></button>
+      </div>
+      <div class="dropdown">
+        <button
+          class="dropbtn"
+          style="
+            font-size: 18px;
+            font-weight: normal;
+            font-family: Segoe UI, sans-serif;
+            color: #252b3600;
+            margin-top: 60%;
+            margin-bottom: 40%;
+
+            border: 2px solid #cccccc00;
+          "
+        >
+          <img
+            src="../../static/css/asset/images/Arrow_down.png"
+            alt="pepek"
+          />
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const container = document.getElementById("container");
+    const template = document.getElementById(
+      "search-dropdown-template"
+    ).content;
+
+    const data = [
+      {
+        placeholder: "Search 1",
+        buttonText: "Button 1",
+        links: ["Link 1", "Link 2", "Link 3"],
+      },
+      {
+        placeholder: "Search 2",
+        buttonText: "Button 2",
+        links: ["Link A", "Link B", "Link C"],
+      },
+      {
+        placeholder: "Search 3",
+        buttonText: "Button 3",
+        links: ["Link X", "Link Y", "Link Z"],
+      },
+      {
+        placeholder: "Search 4",
+        buttonText: "Button 4",
+        links: ["Link I", "Link II", "Link III"],
+      },
+    ];
+
+    data.forEach((item, index) => {
+      const clone = document.importNode(template, true);
+
+      // Modify the cloned content
+      const input = clone.querySelector(".search-input");
+      input.placeholder = item.placeholder;
+
+      const button = clone.querySelector(".dropbtn");
+      button.textContent = item.buttonText;
+
+      const dropdownContent =
+        clone.querySelector(".dropdown-content");
+      dropdownContent.innerHTML = "";
+      item.links.forEach((linkText) => {
+        const link = document.createElement("a");
+        link.href = "#";
+        link.textContent = linkText;
+        dropdownContent.appendChild(link);
+      });
+
+      container.appendChild(clone);
+    });
+  });
+</script>
+<!-- end of searchdropdown -->

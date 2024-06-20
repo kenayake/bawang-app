@@ -1,0 +1,40 @@
+/* ==================== DROPDOWN ======================== */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 0px;
+    align-items: center;
+    /* Ensures the dropdown appears inline with other elements */
+  }
+  .dropdown .dropbtn {
+    background-color: rgb(255, 255, 255); /* Set background color to blue */
+    color: #252b36; /* Adjust text color for better contrast */
+    padding: 0px 0px 0px 00px; /* top-right-bottom-left */
+    border: 0px solid #ccc; /* Added border style */
+    border-radius: 38px; /* Optional rounded corners */
+    cursor: pointer; /* Indicate clickable button */
+  }
+  
+  .dropdown-content {
+    display: none; /* Initially hide the dropdown content */
+    position: absolute; /* Position the content relative to the button */
+    background-color: #ffffff; /* Background color for the dropdown */
+    min-width: 160px; /* Set a minimum width for the dropdown */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    z-index: 1; /* Ensure the dropdown content appears above other elements */
+  }
+  
+  .dropdown-content a {
+    color: black; /* Text color for the links */
+    padding: 12px 16px; /* Padding for the links */
+    text-decoration: none; /* Remove underline from links */
+    display: block; /* Display each link as a block */
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  } /* Change background color on hover */
+  
+  .dropdown:hover .dropdown-content {
+    display: block; /* Show the dropdown content on hover */
+  }

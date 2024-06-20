@@ -1,17 +1,25 @@
-import React from "react";
-import './productstyles.css'
+import React, { useRef, useState } from "react";
+import "./productstyles.css";
 
 export default function Product() {
 
-    const images = [
-        "https://keqingmains.com/wp-content/uploads/2024/03/Yae-Art-F.webp",
-        "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/02/Yae-Miko-in-Genshin-Impact.jpg",
-        "https://preview.redd.it/k6s0utwznz6b1.jpg?auto=webp&s=87b73c52042f34476874f2b2f3e013714970f66d"
-    ]
 
-    function changeImage(params) {
-        
-    }
+  const images = [
+    "https://keqingmains.com/wp-content/uploads/2024/03/Yae-Art-F.webp",
+    "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/02/Yae-Miko-in-Genshin-Impact.jpg",
+    "https://preview.redd.it/k6s0utwznz6b1.jpg?auto=webp&s=87b73c52042f34476874f2b2f3e013714970f66d",
+    "https://m.media-amazon.com/images/I/71Y--kBdDkL._AC_UF894,1000_QL80_.jpg",
+    "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1e2e99f6-4591-4d84-9b16-ca5304808938/dfw8w20-4b1d331b-9db1-4a84-85ee-809dac3ac1ee.png/v1/fill/w_1280,h_1793,q_80,strp/_fanart_genshin_impact_yae_miko_by_kittywai_dfw8w20-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTc5MyIsInBhdGgiOiJcL2ZcLzFlMmU5OWY2LTQ1OTEtNGQ4NC05YjE2LWNhNTMwNDgwODkzOFwvZGZ3OHcyMC00YjFkMzMxYi05ZGIxLTRhODQtODVlZS04MDlkYWMzYWMxZWUucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.dGZZuUgegxcsfYxFVsSsIDxnF5iqtqmyy2T8hUOPAWs",
+    "https://www.pcgamesn.com/wp-content/sites/pcgamesn/2022/02/genshin-impact-25-release-time-yae-miko-banner-1.jpg",
+    "https://staticg.sportskeeda.com/editor/2022/11/3924e-16684282358212-1920.jpg?w=640",
+  ];
+
+  const [image, setImage] = useState(images[0]);
+
+  function changeImage(img) {
+    setImage(img);
+    console.log(img);
+  }
   return (
     <>
       <div>
@@ -86,53 +94,21 @@ export default function Product() {
               <img
                 id="big-image"
                 className="big-image"
-                src="https://keqingmains.com/wp-content/uploads/2024/03/Yae-Art-F.webp"
-                alt="Main Product Image"
+                src={image}
+                alt="Main Product"
               />
               {/* thumbmail image */}
               <div className="thumbnail-container">
-                <img
-                  className="thumbnail"
-                  src="https://keqingmains.com/wp-content/uploads/2024/03/Yae-Art-F.webp"
-                  alt="Thumbnail 1"
-                  onclick="changeImage(this)"
-                />
-                <img
-                  className="thumbnail"
-                  src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/02/Yae-Miko-in-Genshin-Impact.jpg"
-                  alt="Thumbnail 2"
-                  onclick="changeImage(this)"
-                />
-                <img
-                  className="thumbnail"
-                  src="https://preview.redd.it/k6s0utwznz6b1.jpg?auto=webp&s=87b73c52042f34476874f2b2f3e013714970f66d"
-                  alt="Thumbnail 3"
-                  onclick="changeImage(this)"
-                />
-                <img
-                  className="thumbnail"
-                  src="https://m.media-amazon.com/images/I/71Y--kBdDkL._AC_UF894,1000_QL80_.jpg"
-                  alt="Thumbnail 4"
-                  onclick="changeImage(this)"
-                />
-                <img
-                  className="thumbnail"
-                  src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1e2e99f6-4591-4d84-9b16-ca5304808938/dfw8w20-4b1d331b-9db1-4a84-85ee-809dac3ac1ee.png/v1/fill/w_1280,h_1793,q_80,strp/_fanart_genshin_impact_yae_miko_by_kittywai_dfw8w20-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTc5MyIsInBhdGgiOiJcL2ZcLzFlMmU5OWY2LTQ1OTEtNGQ4NC05YjE2LWNhNTMwNDgwODkzOFwvZGZ3OHcyMC00YjFkMzMxYi05ZGIxLTRhODQtODVlZS04MDlkYWMzYWMxZWUucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.dGZZuUgegxcsfYxFVsSsIDxnF5iqtqmyy2T8hUOPAWs"
-                  alt="Thumbnail 5"
-                  onclick="changeImage(this)"
-                />
-                <img
-                  className="thumbnail"
-                  src="https://www.pcgamesn.com/wp-content/sites/pcgamesn/2022/02/genshin-impact-25-release-time-yae-miko-banner-1.jpg"
-                  alt="Thumbnail 6"
-                  onclick="changeImage(this)"
-                />
-                <img
-                  className="thumbnail"
-                  src="https://staticg.sportskeeda.com/editor/2022/11/3924e-16684282358212-1920.jpg?w=640"
-                  alt="Thumbnail 7"
-                  onclick="changeImage(this)"
-                />
+                {images.map((img, idx) => {
+                  return (
+                    <img
+                      className="thumbnail"
+                      src={img}
+                      alt=""
+                      onClick={() => changeImage(img)}
+                    />
+                  );
+                })}
               </div>
             </div>
             {/* end of left image */}

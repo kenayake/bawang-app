@@ -1,6 +1,17 @@
 import React from "react";
+import './productstyles.css'
 
-export default function product() {
+export default function Product() {
+
+    const images = [
+        "https://keqingmains.com/wp-content/uploads/2024/03/Yae-Art-F.webp",
+        "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/02/Yae-Miko-in-Genshin-Impact.jpg",
+        "https://preview.redd.it/k6s0utwznz6b1.jpg?auto=webp&s=87b73c52042f34476874f2b2f3e013714970f66d"
+    ]
+
+    function changeImage(params) {
+        
+    }
   return (
     <>
       <div>

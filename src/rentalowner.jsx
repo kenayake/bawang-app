@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./rentalowner.css";
 export default function rentalowner() {
   return (
     <>

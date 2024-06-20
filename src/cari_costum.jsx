@@ -1,6 +1,6 @@
 import React from "react";
-
-export default function cari_costum() {
+import "./cari_kostum.css";
+export default function CariCostum() {
   return (
     <>
       <div>

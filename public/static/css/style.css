@@ -9,7 +9,7 @@ body {
 
 .topscreen {
   margin: 0;
-  background-image: url("asset/images/homebanner.png");
+  background-image: url("/public/asset/images/homebanner.png");
   background-repeat: no-repeat; /* Prevent image repetition */
   background-position: top; /* Position image at the top */
   background-size: cover;
